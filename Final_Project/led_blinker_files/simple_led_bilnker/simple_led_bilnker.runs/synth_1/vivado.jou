@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov 26 14:14:21 2019
+# Process ID: 604
+# Current directory: E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.runs/synth_1
+# Command line: vivado.exe -log Inst_top_down_cntr.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Inst_top_down_cntr.tcl
+# Log file: E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.runs/synth_1/Inst_top_down_cntr.vds
+# Journal file: E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Inst_top_down_cntr.tcl -notrace

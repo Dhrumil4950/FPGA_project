@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Dec  6 00:31:40 2019
+# Process ID: 1072
+# Current directory: E:/Final_Project/led_blinker_files/single_LED_blinker
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6728 E:\Final_Project\led_blinker_files\single_LED_blinker\single_LED_blinker.xpr
+# Log file: E:/Final_Project/led_blinker_files/single_LED_blinker/vivado.log
+# Journal file: E:/Final_Project/led_blinker_files/single_LED_blinker\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Final_Project/led_blinker_files/single_LED_blinker/single_LED_blinker.xpr
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name DcpsUptoDate
+WARNING: [Project 1-231] Project 'single_LED_blinker.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 793.051 ; gain = 156.867
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  6 00:33:51 2019...

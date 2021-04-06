@@ -1,0 +1,300 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov 26 14:14:21 2019
+# Process ID: 604
+# Current directory: E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.runs/synth_1
+# Command line: vivado.exe -log Inst_top_down_cntr.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Inst_top_down_cntr.tcl
+# Log file: E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.runs/synth_1/Inst_top_down_cntr.vds
+# Journal file: E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Inst_top_down_cntr.tcl -notrace
+Command: synth_design -top Inst_top_down_cntr -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15556 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 742.680 ; gain = 177.465
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Inst_top_down_cntr' [E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.srcs/sources_1/new/Inst_top_down_cntr.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'univ_bin_cntr_N' [E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.srcs/sources_1/new/N_bit_cntr.sv:22]
+	Parameter N bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'univ_bin_cntr_N' (1#1) [E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.srcs/sources_1/new/N_bit_cntr.sv:22]
+WARNING: [Synth 8-7023] instance 'unit_0' of module 'univ_bin_cntr_N' has 7 connections declared, but only 4 given [E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.srcs/sources_1/new/Inst_top_down_cntr.sv:34]
+INFO: [Synth 8-6157] synthesizing module 'univ_bin_16_cntr' [E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.srcs/sources_1/new/univ_bin_16_cntr.sv:23]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'univ_bin_16_cntr' (2#1) [E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.srcs/sources_1/new/univ_bin_16_cntr.sv:23]
+WARNING: [Synth 8-7023] instance 'unit_1' of module 'univ_bin_16_cntr' has 8 connections declared, but only 5 given [E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.srcs/sources_1/new/Inst_top_down_cntr.sv:38]
+INFO: [Synth 8-6155] done synthesizing module 'Inst_top_down_cntr' (3#1) [E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.srcs/sources_1/new/Inst_top_down_cntr.sv:23]
+WARNING: [Synth 8-3331] design univ_bin_cntr_N has unconnected port data_a[16]
+WARNING: [Synth 8-3331] design univ_bin_cntr_N has unconnected port data_a[15]
+WARNING: [Synth 8-3331] design univ_bin_cntr_N has unconnected port data_a[14]
+WARNING: [Synth 8-3331] design univ_bin_cntr_N has unconnected port data_a[13]
+WARNING: [Synth 8-3331] design univ_bin_cntr_N has unconnected port data_a[12]
+WARNING: [Synth 8-3331] design univ_bin_cntr_N has unconnected port data_a[11]
+WARNING: [Synth 8-3331] design univ_bin_cntr_N has unconnected port data_a[10]
+WARNING: [Synth 8-3331] design univ_bin_cntr_N has unconnected port data_a[9]
+WARNING: [Synth 8-3331] design univ_bin_cntr_N has unconnected port data_a[8]
+WARNING: [Synth 8-3331] design univ_bin_cntr_N has unconnected port data_a[7]
+WARNING: [Synth 8-3331] design univ_bin_cntr_N has unconnected port data_a[6]
+WARNING: [Synth 8-3331] design univ_bin_cntr_N has unconnected port data_a[5]
+WARNING: [Synth 8-3331] design univ_bin_cntr_N has unconnected port data_a[4]
+WARNING: [Synth 8-3331] design univ_bin_cntr_N has unconnected port data_a[3]
+WARNING: [Synth 8-3331] design univ_bin_cntr_N has unconnected port data_a[2]
+WARNING: [Synth 8-3331] design univ_bin_cntr_N has unconnected port data_a[1]
+WARNING: [Synth 8-3331] design univ_bin_cntr_N has unconnected port data_a[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 806.391 ; gain = 241.176
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 806.391 ; gain = 241.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 806.391 ; gain = 241.176
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.srcs/constrs_1/imports/Downloads/fpro_vanilla_nx4.xdc]
+Finished Parsing XDC File [E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.srcs/constrs_1/imports/Downloads/fpro_vanilla_nx4.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.srcs/constrs_1/imports/Downloads/fpro_vanilla_nx4.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Inst_top_down_cntr_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Inst_top_down_cntr_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 906.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 906.582 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 906.582 ; gain = 341.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 906.582 ; gain = 341.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 906.582 ; gain = 341.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 906.582 ; gain = 341.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Inst_top_down_cntr 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module univ_bin_cntr_N 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module univ_bin_16_cntr 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'led_reg/Q' [E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.srcs/sources_1/new/Inst_top_down_cntr.sv:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.srcs/sources_1/new/Inst_top_down_cntr.sv:38]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.srcs/sources_1/new/Inst_top_down_cntr.sv:38]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 906.582 ; gain = 341.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 906.582 ; gain = 341.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 906.582 ; gain = 341.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 906.582 ; gain = 341.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 914.762 ; gain = 349.547
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 914.762 ; gain = 349.547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 914.762 ; gain = 349.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 914.762 ; gain = 349.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 914.762 ; gain = 349.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 914.762 ; gain = 349.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     1|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 914.762 ; gain = 349.547
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 3 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 914.762 ; gain = 249.355
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 914.762 ; gain = 349.547
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 934.930 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 19 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 934.930 ; gain = 639.875
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 934.930 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Final_Project/led_blinker_files/simple_led_bilnker/simple_led_bilnker.runs/synth_1/Inst_top_down_cntr.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Inst_top_down_cntr_utilization_synth.rpt -pb Inst_top_down_cntr_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 26 14:14:56 2019...
